@@ -1,0 +1,53 @@
+body {
+  background-color: #000000;
+}
+
+#main {
+  width: 100%;
+  height: auto;
+  color: #ebebeb;
+  font-family: Alike, Times New Roman;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  grid-template-areas:
+    "header header header"
+    "side info info";
+}
+
+#title-container {
+  grid-area: header;
+  text-align: center;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+#tribute-info {
+  text-align: left;
+  grid-area: info;
+  margin: 0 20px 20px 20px;
+}
+
+#tribute-link:link {
+  color: #00ADAD;
+}
+
+#tribute-link:visited {
+  color: #00ADAD;
+}
+
+#img-div {
+  grid-area: side;
+  text-align: center;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  align: center;
+  display: block;
+}
